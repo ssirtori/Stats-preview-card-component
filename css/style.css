@@ -1,0 +1,39 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* global classes */
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-full-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* landing */
+
+
+/* mobile media queries */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+}
+
+/* tablet media queries */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
