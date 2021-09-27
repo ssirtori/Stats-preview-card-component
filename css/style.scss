@@ -1,0 +1,112 @@
+/* reset */
+
+$white: #fff;
+$pink: hsl(277, 64%, 61%);
+$grey: #aba9be;
+$darkblue: hsl(233, 47%, 7%);
+$blue: hsl(244, 38%, 16%);
+
+$title: 40px;
+$paragraph: 16px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: $darkblue
+}
+
+.card--inner {
+    background-color: $blue;
+    width: 100%;
+    margin: 0 80px;
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+    .col {
+        width: 50%;
+    }
+    .col--textarea {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card--textarea {
+        color: $white;
+        padding: 40px 80px;
+        .title {
+            font-size: $title;
+            span {
+                color: $pink;
+            }
+        }
+        .description {
+            margin-top: 32px;
+            color: $grey;
+            line-height: 22px;
+        }
+        .values {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 64px;
+        }
+    }
+    .card--image {
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #wrapper {
+        padding: 64px 0;
+        height: auto;
+    }
+    .card--inner {
+      margin: 0 16px;
+      flex-direction: column;
+      .col.col--image {
+        margin-top: 48px;
+      }
+      .col {
+          width: 100%;
+      }
+      .card--textarea {
+          padding: 24px 16px;
+        .title {
+            font-size: 24px;
+            text-align: center;
+        }
+        .description {
+            margin-top: 24px;
+            text-align: center;
+        }
+        .values {
+            display: flex;
+            flex-direction: column;
+            margin-top: 48px;
+            align-items: center;
+            text-align: center;
+            .single--values {
+                margin-top: 24px;
+            }
+        }
+    }
+    }
+  }
